@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Poppins:wght@100;300;400;600;700&family=Sacramento&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/31bcd6fb6e.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" alt=""></a>
+        <div class="nav-links" id="navLinks">
+
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+
+        </div>
+
+
+      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+    <h1>About Us</h1>
+    </section>
+
+<!-- About Us Content -->
+
+<section class="about-us">
+  <div class="row">
+    <div class="about-col">
+      <h1>We are the World's Largest University</h1>
+      <p>Mauris aliquet convallis sapien, in egestas enim rhoncus non. Suspendisse non purus eu lorem sodales finibus et ut neque. Sed dictum lacinia urna at molestie. Sed dapibus nulla vitae ultricies rhoncus. Mauris malesuada tincidunt purus sit amet tincidunt. Nulla ac lorem non tortor mollis porta nec commodo velit. Cras convallis, neque ut convallis tempus, lorem enim suscipit sapien, vel ultricies quam sapien a purus. In vitae ante felis.</p>
+      <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+    </div>
+    <div class="about-col">
+      <img src="images/about.jpg" alt="">
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<!-- Javascript for toggle menu -->
+
+<script>
+  var navLinks = document.getElementById("navLinks");
+  function showMenu(){
+    // navLinks.style.display = "block";
+    // navLinks.style.opacity = "1";
+    navLinks.style.right = "0px";
+  }
+  function hideMenu(){
+    // navLinks.style.display = "none";
+    navLinks.style.right = "-200px";
+  }
+</script>
+
+<!-- footer -->
+<section class="footer">
+  <h4>About Us</h4>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+     <br>Nam ultricies ex eget eros tincidunt suscipit.
+      Aliquam non faucibus libero. </p>
+  <div class="icons">
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-linkedin"></i>
+
+  </div>
+  <p>Made with <i class="fa-solid fa-heart"></i> Taught by Easy Tutorials </p>
+
+</section>
+  </body>
+</html>

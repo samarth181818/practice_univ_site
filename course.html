@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Poppins:wght@100;300;400;600;700&family=Sacramento&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/31bcd6fb6e.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" alt=""></a>
+        <div class="nav-links" id="navLinks">
+
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+
+        </div>
+
+
+      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+    <h1>Our Courses</h1>
+    </section>
+
+<!-- Course -->
+
+<section class="course">
+  <h1>Courses We Offer</h1>
+  <p>We offer a variety of courses on Web Development, Coding and Design.</p>
+
+  <div class="row">
+    <div class="course-col">
+      <h3>Intermediate</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in augue
+        mauris. Duis pharetra ipsum eget euismod venenatis. Vestibulum vel augue
+        pulvinar, interdum mauris maximus, sagittis mauris..</p>
+    </div>
+
+    <div class="course-col">
+      <h3>Degree</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in augue
+        mauris. Duis pharetra ipsum eget euismod venenatis. Vestibulum vel augue
+        pulvinar, interdum mauris maximus, sagittis mauris.]</p>
+    </div>
+
+    <div class="course-col">
+      <h3>Post-Graduation</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in augue
+        mauris. Duis pharetra ipsum eget euismod venenatis. Vestibulum vel augue
+        pulvinar, interdum mauris maximus, sagittis mauris.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- Facilities -->
+
+<section class="facilities">
+  <h1>Our Facilities</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <div class="row">
+    <div class="facilities-col">
+      <img src="images/library.png" alt="">
+      <h3>World Class Library</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Nunc facilisis non justo sit amet hendrerit. Donec arcu nulla</p>
+    </div>
+
+    <div class="facilities-col">
+      <img src="images/basketball.png" alt="">
+      <h3>Large Play Grounds</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Nunc facilisis non justo sit amet hendrerit. Donec arcu nulla</p>
+    </div>
+
+    <div class="facilities-col">
+      <img src="images/cafeteria.png" alt="">
+      <h3>Tasty and Healthy Food</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Nunc facilisis non justo sit amet hendrerit. Donec arcu nulla</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Javascript for toggle menu -->
+
+<script>
+  var navLinks = document.getElementById("navLinks");
+  function showMenu(){
+    // navLinks.style.display = "block";
+    // navLinks.style.opacity = "1";
+    navLinks.style.right = "0px";
+  }
+  function hideMenu(){
+    // navLinks.style.display = "none";
+    navLinks.style.right = "-200px";
+  }
+</script>
+
+<!-- footer -->
+<section class="footer">
+  <h4>About Us</h4>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+     <br>Nam ultricies ex eget eros tincidunt suscipit.
+      Aliquam non faucibus libero. </p>
+  <div class="icons">
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-linkedin"></i>
+
+  </div>
+  <p>Made with <i class="fa-solid fa-heart"></i> Taught by Easy Tutorials </p>
+
+</section>
+  </body>
+</html>
